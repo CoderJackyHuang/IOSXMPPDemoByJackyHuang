@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYBRegisterController">
+            <connections>
+                <outlet property="jidTextField" destination="eAx-Ut-eB8" id="Htu-Su-qGd"/>
+                <outlet property="passwordTextField" destination="PPQ-3J-775" id="5eX-Bz-zCN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JabberID:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEP-AG-oIJ">
+                    <rect key="frame" x="10" y="84" width="75" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="kAU-zT-mDP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user@example.com" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eAx-Ut-eB8" userLabel="JID Text Field - user@example.com">
+                    <rect key="frame" x="93" y="84" width="207" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiM-gc-593">
+                    <rect key="frame" x="10" y="153" width="81" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="WGy-Vd-ci3"/>
+                        <constraint firstAttribute="height" constant="21" id="vob-jb-9e5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="vob-jb-9e5"/>
+                        </mask>
+                    </variation>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PPQ-3J-775" userLabel="Password Text Field">
+                    <rect key="frame" x="93" y="148" width="207" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oe9-up-s62">
+                    <rect key="frame" x="10" y="228" width="300" height="45"/>
+                    <color key="backgroundColor" red="1" green="0.47718637310000001" blue="0.54255320490000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="4Pv-QR-bgS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onRegisterButtonClicked:" destination="-1" eventType="touchUpInside" id="c1T-JE-AL0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PPQ-3J-775" firstAttribute="top" secondItem="eAx-Ut-eB8" secondAttribute="bottom" constant="29" id="0XH-7t-n9I"/>
+                <constraint firstItem="oiM-gc-593" firstAttribute="leading" secondItem="iEP-AG-oIJ" secondAttribute="leading" id="5C7-GV-nQT"/>
+                <constraint firstItem="Oe9-up-s62" firstAttribute="trailing" secondItem="eAx-Ut-eB8" secondAttribute="trailing" constant="10" id="8QH-93-Wzy"/>
+                <constraint firstItem="eAx-Ut-eB8" firstAttribute="leading" secondItem="PPQ-3J-775" secondAttribute="leading" id="Afe-bo-SU0"/>
+                <constraint firstItem="iEP-AG-oIJ" firstAttribute="height" secondItem="eAx-Ut-eB8" secondAttribute="height" id="HTu-cr-FZf"/>
+                <constraint firstItem="oiM-gc-593" firstAttribute="height" secondItem="PPQ-3J-775" secondAttribute="height" id="KKz-6H-zop"/>
+                <constraint firstItem="eAx-Ut-eB8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="QLB-ix-sfn"/>
+                <constraint firstItem="Oe9-up-s62" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="UJS-Lf-2ii"/>
+                <constraint firstItem="Oe9-up-s62" firstAttribute="top" secondItem="oiM-gc-593" secondAttribute="bottom" constant="40" id="YWx-is-OMB"/>
+                <constraint firstItem="iEP-AG-oIJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="fMc-Ja-sPX"/>
+                <constraint firstItem="PPQ-3J-775" firstAttribute="leading" secondItem="oiM-gc-593" secondAttribute="trailing" constant="2" id="gEL-5F-oH9"/>
+                <constraint firstItem="Oe9-up-s62" firstAttribute="trailing" secondItem="PPQ-3J-775" secondAttribute="trailing" constant="10" id="pVP-cy-loE"/>
+                <constraint firstItem="oiM-gc-593" firstAttribute="top" secondItem="iEP-AG-oIJ" secondAttribute="bottom" constant="34" id="stK-9T-P1w"/>
+                <constraint firstItem="iEP-AG-oIJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="wV9-LV-Dh4"/>
+                <constraint firstAttribute="trailing" secondItem="Oe9-up-s62" secondAttribute="trailing" constant="10" id="y1t-kL-DfE"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="166" y="329"/>
+        </view>
+    </objects>
+</document>

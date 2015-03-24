@@ -1,0 +1,17 @@
+//
+//  prefix.pch
+//  XMPPDemo
+//
+//  Created by huangyibiao on 15/3/23.
+//  Copyright (c) 2015年 huangyibiao. All rights reserved.
+//
+
+#ifndef XMPPDemo_prefix_pch
+#define XMPPDemo_prefix_pch
+
+#import <UIKit/UIKit.h>
+
+#define kUserJIDKey @"kUserJIDStringKey"
+#define kUserPasswordKey @"KUserPasswordKey"
+
+#endif
